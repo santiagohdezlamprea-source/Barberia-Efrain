@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barbería Don Efraín · Galerías, Bogotá</title>
+  <meta name="description" content="Barbería de barrio en Galerías desde 1994. Corte, barba y afeitada a navaja. Reserva por WhatsApp.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Mono:wght@400;600&family=Caveat:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="pole" aria-hidden="true"></div>
+
+  <header class="top">
+    <a href="#" class="brand">Don Efraín</a>
+    <nav>
+      <a href="#precios">Precios</a>
+      <a href="#barberos">Barberos</a>
+      <a href="#reservar" class="nav-cta">Reservar</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <p class="kicker">Barbería de barrio · Galerías, Bogotá · desde 1994</p>
+        <h1>Corte, barba<br>y buena conversación.</h1>
+        <p class="lead">
+          Aquí no hay música a todo volumen ni afán. Te sientas, te tomas un tinto
+          y sales bien peluqueado. Así ha sido por más de treinta años.
+        </p>
+        <a href="#reservar" class="btn">Separar mi turno</a>
+      </div>
+
+      <aside class="ticket">
+        <p class="ticket-label">Hoy</p>
+        <p class="status" id="status">—</p>
+        <hr>
+        <dl class="hours">
+          <dt>Lun – Vie</dt><dd>9:00 a. m. – 7:30 p. m.</dd>
+          <dt>Sábado</dt><dd>8:00 a. m. – 6:00 p. m.</dd>
+          <dt>Domingo</dt><dd>Cerrado (Don Efraín ve fútbol)</dd>
+        </dl>
+      </aside>
+    </section>
+
+    <section id="precios" class="block">
+      <h2>Precios</h2>
+      <p class="note">el más pedido ↓</p>
+      <ul class="menu">
+        <li><span>Corte clásico</span><i></i><b>$25.000</b></li>
+        <li><span>Corte + barba</span><i></i><b>$38.000</b></li>
+        <li><span>Degradado (fade)</span><i></i><b>$30.000</b></li>
+        <li><span>Afeitada a navaja con toalla caliente</span><i></i><b>$28.000</b></li>
+        <li><span>Perfilado de barba</span><i></i><b>$15.000</b></li>
+        <li><span>Corte niño (hasta 12 años)</span><i></i><b>$18.000</b></li>
+      </ul>
+      <p class="small">El tinto va por cuenta de la casa.</p>
+    </section>
+
+    <section id="barberos" class="block">
+      <h2>Los barberos</h2>
+      <div class="barbers">
+        <article class="barber">
+          <span class="stamp">DE</span>
+          <h3>Don Efraín</h3>
+          <p>El dueño. Más de 30 años con la tijera. Experto en cortes clásicos y afeitada a navaja. Para el degradado, mejor pídeselo a Kevin.</p>
+        </article>
+        <article class="barber">
+          <span class="stamp">KR</span>
+          <h3>Kevin Ruiz</h3>
+          <p>El de los degradados y los diseños. Si traes una foto de referencia, te la saca igualita.</p>
+        </article>
+        <article class="barber">
+          <span class="stamp">JP</span>
+          <h3>Julián Patiño</h3>
+          <p>Especialista en barba. Paciente con los niños, así que es el que más piden las mamás del barrio.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="block rules">
+      <h2>Reglas de la casa</h2>
+      <ol>
+        <li>Si llegas más de 10 minutos tarde, pasa el siguiente.</li>
+        <li>Se habla de fútbol, pero sin pelear.</li>
+        <li>Si no te gustó el corte, dilo antes de pararte de la silla.</li>
+      </ol>
+    </section>
+
+    <section id="reservar" class="block booking">
+      <h2>Reserva tu turno</h2>
+      <p>Llena esto y te llega el mensaje listo para enviar por WhatsApp.</p>
+
+      <form id="booking">
+        <label>Tu nombre
+          <input name="nombre" type="text" autocomplete="given-name" placeholder="Ej: Camilo">
+        </label>
+
+        <fieldset>
+          <legend>¿Con quién?</legend>
+          <label class="chip"><input type="radio" name="barbero" value="Don Efraín" checked> Don Efraín</label>
+          <label class="chip"><input type="radio" name="barbero" value="Kevin"> Kevin</label>
+          <label class="chip"><input type="radio" name="barbero" value="Julián"> Julián</label>
+          <label class="chip"><input type="radio" name="barbero" value="el que esté libre"> Me da igual</label>
+        </fieldset>
+
+        <label>Servicio
+          <select name="servicio">
+            <option>Corte clásico</option>
+            <option>Corte + barba</option>
+            <option>Degradado (fade)</option>
+            <option>Afeitada a navaja</option>
+            <option>Perfilado de barba</option>
+            <option>Corte niño</option>
+          </select>
+        </label>
+
+        <label>Día
+          <input name="dia" type="date" id="dia">
+        </label>
+
+        <p class="error" id="error"></p>
+        <button class="btn" type="submit">Enviar por WhatsApp</button>
+      </form>
+    </section>
+
+    <section class="block">
+      <h2>¿Cómo llegar?</h2>
+      <p>Cra. 24 con calle 52, local 3. Al lado de la panadería y frente al parque.
+        Si vienes en TransMilenio, te bajas en la estación Galerías y caminas unas tres cuadras.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Barbería Don Efraín es un negocio ficticio. Hice esta página como proyecto de portafolio.</p>
+    <p>Hecha por <a href="https://github.com/santiagohdezlamprea-source">Santiago H. Lamprea</a></p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
